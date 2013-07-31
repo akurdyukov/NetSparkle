@@ -78,6 +78,10 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\NetSparkle2010Wpf\NetSparkle2010Wpf.csproj">
+      <Project>{147bd8a7-5374-4de7-88ee-2d39107d0de3}</Project>
+      <Name>NetSparkle2010Wpf</Name>
+    </ProjectReference>
     <ProjectReference Include="..\NetSparkle\NetSparkle2010.csproj">
       <Project>{74635A21-2BAD-4522-AB95-E3E5703CD301}</Project>
       <Name>NetSparkle2010</Name>

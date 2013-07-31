@@ -1,6 +1,6 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetSparkleChecker2010", "NetSparkleChecker\NetSparkleChecker2010.csproj", "{C5EB5203-0E15-49AC-8CD0-719DA6756188}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetSparkle2010", "NetSparkle\NetSparkle2010.csproj", "{74635A21-2BAD-4522-AB95-E3E5703CD301}"
@@ -12,6 +12,8 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetSparkleTestApp", "NetSparkleTestApp\NetSparkleTestApp.csproj", "{5D5F4532-9CA6-4380-818D-A8FAC21450D1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SampleApplication", "SampleApplication\SampleApplication.csproj", "{B85E1883-AD3C-4EEF-B947-7B743ECCE0F0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetSparkle2010Wpf", "NetSparkle2010Wpf\NetSparkle2010Wpf.csproj", "{147BD8A7-5374-4DE7-88EE-2D39107D0DE3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -79,6 +81,16 @@ Global
 		{B85E1883-AD3C-4EEF-B947-7B743ECCE0F0}.Release|Mixed Platforms.Build.0 = Release|x86
 		{B85E1883-AD3C-4EEF-B947-7B743ECCE0F0}.Release|x86.ActiveCfg = Release|x86
 		{B85E1883-AD3C-4EEF-B947-7B743ECCE0F0}.Release|x86.Build.0 = Release|x86
+		{147BD8A7-5374-4DE7-88EE-2D39107D0DE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{147BD8A7-5374-4DE7-88EE-2D39107D0DE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{147BD8A7-5374-4DE7-88EE-2D39107D0DE3}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{147BD8A7-5374-4DE7-88EE-2D39107D0DE3}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{147BD8A7-5374-4DE7-88EE-2D39107D0DE3}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{147BD8A7-5374-4DE7-88EE-2D39107D0DE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{147BD8A7-5374-4DE7-88EE-2D39107D0DE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{147BD8A7-5374-4DE7-88EE-2D39107D0DE3}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{147BD8A7-5374-4DE7-88EE-2D39107D0DE3}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{147BD8A7-5374-4DE7-88EE-2D39107D0DE3}.Release|x86.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

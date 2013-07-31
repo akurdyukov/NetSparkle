@@ -4,42 +4,44 @@ using System.IO;
 using System.Reflection;
 using System.Windows.Forms;
 using NetSparkle;
+using NetSparkle2010Wpf;
 
 namespace SampleApplication
 {
-    public partial class Form1 : Form
-    {
-        private Sparkle _sparkleUpdateDetector;
+	public partial class Form1 : Form
+	{
+		private Sparkle _sparkleUpdateDetector;
 
-        public Form1()
-        {
-            InitializeComponent();
+		public Form1()
+		{
+			InitializeComponent();
 
-            var appcastUrl = "file://" + DirectoryOfTheApplicationExecutable + "../../../../Extras/Sample Appcast.xml";
-            _sparkleUpdateDetector = new Sparkle(appcastUrl, SystemIcons.Application);
-            _sparkleUpdateDetector.CheckOnFirstApplicationIdle();
-        }
+			var appcastUrl = "file://" + DirectoryOfTheApplicationExecutable + "../../../../Extras/Sample Appcast.xml";
+			//_sparkleUpdateDetector = new Sparkle(appcastUrl, SystemIcons.Application);
+			_sparkleUpdateDetector = new Sparkle(appcastUrl, SystemIcons.Application, null, new WpfNetSparkleUIFactory());
+			_sparkleUpdateDetector.CheckOnFirstApplicationIdle();
+		}
 
 
-        public static string DirectoryOfTheApplicationExecutable
-        {
-            get
-            { 
-                string path;
-                path = new Uri(Assembly.GetExecutingAssembly().CodeBase).AbsolutePath;
-                path = Uri.UnescapeDataString(path);
-                return Directory.GetParent(path).FullName;
-            }
-        }
+		public static string DirectoryOfTheApplicationExecutable
+		{
+			get
+			{
+				string path;
+				path = new Uri(Assembly.GetExecutingAssembly().CodeBase).AbsolutePath;
+				path = Uri.UnescapeDataString(path);
+				return Directory.GetParent(path).FullName;
+			}
+		}
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            _sparkleUpdateDetector.CheckForUpdatesQuietly();
-        }
+		private void button1_Click(object sender, EventArgs e)
+		{
+			_sparkleUpdateDetector.CheckForUpdatesQuietly();
+		}
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            _sparkleUpdateDetector.CheckForUpdatesAtUserRequest();
-        }
-    }
+		private void button2_Click(object sender, EventArgs e)
+		{
+			_sparkleUpdateDetector.CheckForUpdatesAtUserRequest();
+		}
+	}
 }
